@@ -19,12 +19,15 @@ public class DataType {
         System.out.println(c);//由于char型是两个字节，所以可以存储汉字
 
         byte m=10;
+        System.out.print(m);
         int n=128;
         //m=n; 此处会报错，因为小字节无法转向大字节
         m=(byte)n;//此处不会报错，但可能存在精度丢失
         //byte t=m+n报错，以为c无法承受int类型
         int t=(int)(m+n);//将m强制转换为int，再相加
         //寄存器读写最小单位是四个字节，所以对于小于四个字节的运算，都会提升为四个字节来进行运算
+        
+        System.out.println(t);
 
         String arr1="hello,";
         String arr2="world";
