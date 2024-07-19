@@ -25,5 +25,11 @@ public class Array {
         System.out.println(ret);
 
         System.out.println(arr1);//输出的东西不是乱码，而是数据类型+地址哈希值
+
+        //二维数组
+        int[][] Barr={{1,2,3},{4,5,6}};//二维数组必须手动分出行列
+        System.out.println(Arrays.deepToString(Barr));
+
+        //不规则的二维数组
     }
 }
