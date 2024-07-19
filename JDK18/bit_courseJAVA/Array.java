@@ -2,7 +2,7 @@ package bit_courseJAVA;
 
 //数组对象
 
-import java.util.Arrays;
+import java.util.Arrays;//调用数组类型包
 
 public class Array {
     public static void main(String[] args) {
@@ -23,5 +23,7 @@ public class Array {
         // 操作数组类工具
         String ret= Arrays.toString(arr2);
         System.out.println(ret);
+
+        System.out.println(arr1);//输出的东西不是乱码，而是数据类型+地址哈希值
     }
 }
