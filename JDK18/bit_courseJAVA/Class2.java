@@ -13,12 +13,24 @@ class date
         this.Day=d;
     }
 
+    public date(int year) {
+        this(2024, 8, 8);                //构造方法内调用其他构造方法
+        Year = year;
+    }
+
+    public date(int year, int month, int day) {
+
+        Year = year;
+        Month = month;
+        Day = day;
+    }
+
     public void printdate()
     {
         System.out.println(this.Year+"."+this.Month+"."+this.Day);
     }
 
-    public date()//构造方法，实例化会执行构造方法
+    public date()//构造方法，实例化会执行构造方法；也可以ALT+INSERT组合键快速生成构造方法
     {
         System.out.println("构造方法测试");
         this.Year=2024;
