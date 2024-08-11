@@ -12,4 +12,9 @@ public class Dog extends Animals{
         System.out.println(age);
         System.out.println(super.age);
     }
+
+    public Dog(){
+        super("dog1");
+    }
+
 }

@@ -5,4 +5,9 @@ public class Cat extends Animals{ //extends关键字，可以将其他类中的�
     {
         System.out.println("mimi");
     }
+
+    public Cat()
+    {
+        super("cat1");
+    }
 }
