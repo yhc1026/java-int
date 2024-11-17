@@ -1,5 +1,5 @@
 package bit_courseJAVA.Thread;
-
+//多线程程序方法1：创建类继承Thread，重写run方法
 public class MyThread extends Thread{
     public void run()                    //run相当于线程的入口，重写run方法，为run方法赋予特定的功能
     {
