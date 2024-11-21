@@ -18,6 +18,8 @@ public class counter {
                 fos.write((char)t);
                 cnt++;
             }
+            fis.close();
+            fos.close();
         } catch (FileNotFoundException e) {
             System.err.println("文件未找到: " + e.getMessage());
         } catch (IOException e) {
