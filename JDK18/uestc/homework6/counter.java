@@ -8,9 +8,9 @@ public class counter {
         int cnt=0;
         int t=0;
         try {
-            FileInputStream fis=new FileInputStream(filepath);
-            File testdestination=new File("./");
-            FileOutputStream fos=new FileOutputStream("./testdestination.txt");
+            FileInputStream fis=new FileInputStream(filepath+"/testsource.txt");
+            File testdestination=new File(filepath+"/testdestination.txt");
+            FileOutputStream fos=new FileOutputStream(filepath+"/testdestination.txt");
             testdestination.createNewFile();
             while(t!=-1)
             {
