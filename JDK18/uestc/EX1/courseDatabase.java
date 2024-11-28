@@ -29,7 +29,7 @@ public class courseDatabase {
 
         Course course=new Course(name, ID, hour);
         try {
-            ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(filepath));
+            MyObjectOutputStream3 oos=new MyObjectOutputStream3(new FileOutputStream(filepath, true));
             oos.writeObject(course);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -37,12 +37,11 @@ public class courseDatabase {
         System.out.println("success");
     }
 
-    public void readtCourseData()
+    public void readCourseData()
     {
-        try {
+        try(MyObjectInputStream3 ois=new MyObjectInputStream3(new FileInputStream(filepath))) {
             for(int i=0;i<course.length;i++)
             {
-                ObjectInputStream ois=new ObjectInputStream(new FileInputStream(filepath));
                 course[i]=(Course) ois.readObject();
                 System.out.println("课程"+(i+1)+"为"+course[i].getCourseName()+", 课程号为"+course[i].getCourseID()+"课时为"+course[i].getCourseHour()+"h");
             }
@@ -57,10 +56,46 @@ public class courseDatabase {
         }
     }
 
+    public void searchCourseData()
+    {
+        System.out.println("请输入课程编号");
+        Scanner scanner=new Scanner(System.in);
+        String ID=scanner.nextLine();
+
+        try(MyObjectInputStream1 ois=new MyObjectInputStream1(new FileInputStream(filepath))) {
+            for(int i = 0; i< course.length; i++)
+            {
+                course[i]=(Course) ois.readObject();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        int cnt=0;
+        for(;cnt<course.length;cnt++)
+        {
+            if(course[cnt].getCourseID().equals(ID))
+            {
+                System.out.println("该课程为"+course[cnt].getCourseName()+", 课时为"+course[cnt].getCourseHour()+"h");
+                break;
+            }
+        }
+        if(cnt==course.length)
+        {
+            System.out.println("找不到该课程");
+        }
+        for(int i=0;i<course.length;i++)
+        {
+            course[i]=null;
+        }
+        return;
+    }
+
     public void writeCourseData()
     {
         try {
-            ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(filepath));
+            MyObjectOutputStream3 oos=new MyObjectOutputStream3(new FileOutputStream(filepath));
             for(int i=0;i<course.length&&course[i]!=null;i++)
             {
                 oos.writeObject(course[i]);
@@ -72,5 +107,29 @@ public class courseDatabase {
         {
             course[i]=null;
         }
+    }
+}
+
+class MyObjectOutputStream3 extends ObjectOutputStream {
+
+    public MyObjectOutputStream3(OutputStream out) throws IOException {
+        super(out);
+    }
+
+    @Override
+    protected void writeStreamHeader() throws IOException {
+        //重写读取头部信息方法：不写入头部信息
+        super.reset();
+    }
+}
+
+class MyObjectInputStream3 extends ObjectInputStream {
+    public MyObjectInputStream3(InputStream in) throws IOException {
+        super(in);
+    }
+
+    @Override
+    protected void readStreamHeader() throws IOException {
+        //重写读取头部信息方法：什么也不做
     }
 }

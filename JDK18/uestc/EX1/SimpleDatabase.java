@@ -30,7 +30,7 @@ public class SimpleDatabase implements Serializable{
 
     public void writeData(){
         try {
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filepath));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filepath, true));
             for (int i = 0; i < cs.length; i++) {
                 CourseSelection courseSelection = cs[i];
                 oos.writeObject(courseSelection);

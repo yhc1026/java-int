@@ -13,6 +13,7 @@ public class TeacherDatabase {
 
     public void createTeacher()
     {
+
         String name;
         String gender;
         String title;
@@ -37,7 +38,7 @@ public class TeacherDatabase {
 
         Teacher teacher=new Teacher(ID, name, gender, age, title);
         try {
-            ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(filepath));
+            MyObjectOutputStream5 oos=new MyObjectOutputStream5(new FileOutputStream(filepath, true));
             oos.writeObject(teacher);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -47,10 +48,9 @@ public class TeacherDatabase {
 
     public void readteacherData()
     {
-        try {
+        try(MyObjectInputStream5 ois=new MyObjectInputStream5(new FileInputStream(filepath))) {
             for(int i=0;i<teacher.length;i++)
             {
-                ObjectInputStream ois=new ObjectInputStream(new FileInputStream(filepath));
                 teacher[i]=(Teacher) ois.readObject();
                 System.out.println("教师"+(i+1)+"("+teacher[i].getTitle()+")为"+teacher[i].getName()+", 工号为"+teacher[i].getTeacherID());
             }
@@ -65,10 +65,46 @@ public class TeacherDatabase {
         }
     }
 
+    public void searchTeacherData()
+    {
+        System.out.println("请输入教师编号");
+        Scanner scanner=new Scanner(System.in);
+        String ID=scanner.nextLine();
+
+        try(MyObjectInputStream1 ois=new MyObjectInputStream1(new FileInputStream(filepath))) {
+            for(int i=0;i<teacher.length;i++)
+            {
+                teacher[i]=(Teacher) ois.readObject();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        int cnt=0;
+        for(;cnt<teacher.length;cnt++)
+        {
+            if(teacher[cnt].getTeacherID().equals(ID))
+            {
+                System.out.println("该教师姓名为"+teacher[cnt].getName()+", 性别为"+teacher[cnt].getGender()+", 职称为"+teacher[cnt].getTitle()+"，年龄为"+teacher[cnt].getAge()+"岁");
+                break;
+            }
+        }
+        if(cnt==teacher.length)
+        {
+            System.out.println("找不到该教师");
+        }
+        for(int i=0;i<teacher.length;i++)
+        {
+            teacher[i]=null;
+        }
+        return;
+    }
+
     public void writeteacherData()
     {
-        try {
-            ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream(filepath));
+        try (MyObjectOutputStream5 oos=new MyObjectOutputStream5(new FileOutputStream(filepath,true))){
+
             for(int i=0;i<teacher.length&&teacher[i]!=null;i++)
             {
                 oos.writeObject(teacher[i]);
@@ -80,5 +116,29 @@ public class TeacherDatabase {
         {
             teacher[i]=null;
         }
+    }
+}
+
+class MyObjectOutputStream5 extends ObjectOutputStream {
+
+    public MyObjectOutputStream5(OutputStream out) throws IOException {
+        super(out);
+    }
+
+    @Override
+    protected void writeStreamHeader() throws IOException {
+        //重写读取头部信息方法：不写入头部信息
+        super.reset();
+    }
+}
+
+class MyObjectInputStream5 extends ObjectInputStream {
+    public MyObjectInputStream5(InputStream in) throws IOException {
+        super(in);
+    }
+
+    @Override
+    protected void readStreamHeader() throws IOException {
+        //重写读取头部信息方法：什么也不做
     }
 }
