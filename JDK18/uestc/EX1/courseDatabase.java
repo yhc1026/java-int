@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class courseDatabase {
-    private static String filepath="D:/Desktop/course.txt";
+    private static String filepath="D:/codeC/java-int/JDK18/uestc/EX1/course.txt";
     private Course[] course;
 
     public courseDatabase(Course[] course) {

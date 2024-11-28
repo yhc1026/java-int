@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class selectionDatabase {
-    private static String filepath="D:/Desktop/selection.txt";
+    private static String filepath="D:/codeC/java-int/JDK18/uestc/EX1/selection.txt";
     private CourseSelection[] courseSelections;
 
     public selectionDatabase(CourseSelection[] courseSelections) {
@@ -122,7 +122,7 @@ public class selectionDatabase {
 
     public void searchSelectionData()
     {
-        System.out.println("请输入选课z编号");
+        System.out.println("请输入选课编号");
         Scanner scanner=new Scanner(System.in);
         String ID=scanner.nextLine();
 
@@ -173,17 +173,19 @@ public class selectionDatabase {
         int cnt=0;
         for(;cnt<courseSelections.length;cnt++)
         {
-            flag=true;
             if(courseSelections[cnt].getStudent().getStudentID().equals(ID))
             {
+                flag=true;
                 System.out.println("选课"+t+"为"+courseSelections[cnt].getClassTaken().getCourse().getCourseName()+", 选课学生为"+courseSelections[cnt].getStudent().getName()+", 授课教师为"+courseSelections[cnt].getClassTaken().getTeacher().getName()+"，上课地点为"+courseSelections[cnt].getClassTaken().getClassroom());
                 t++;
             }
         }
-        if(!flag)
+
+        if(flag==false)
         {
             System.out.println("找不到该学生的选课");
         }
+
         for(int i=0;i<courseSelections.length;i++)
         {
             courseSelections[i]=null;
