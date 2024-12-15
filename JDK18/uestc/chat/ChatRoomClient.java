@@ -47,7 +47,7 @@ public class ChatRoomClient extends JFrame {
 
             new Thread(new MessageReceiver(in)).start();
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Could not connect to server: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "无法连接: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -74,14 +74,14 @@ public class ChatRoomClient extends JFrame {
                     chatArea.append(message + "\n");
                 }
             } catch (IOException e) {
-                JOptionPane.showMessageDialog(ChatRoomClient.this, "Error receiving message: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(ChatRoomClient.this, "错误信息: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
 
     public static void main(String[] args) {
-        String nickname = JOptionPane.showInputDialog("Enter your nickname:");
-        String serverAddress = JOptionPane.showInputDialog("Enter server address:");
+        String nickname = JOptionPane.showInputDialog("昵称:");
+        String serverAddress = JOptionPane.showInputDialog("地址:");
         int serverPort = 1234;
 
         SwingUtilities.invokeLater(new Runnable() {

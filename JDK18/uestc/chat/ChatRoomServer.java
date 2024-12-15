@@ -10,11 +10,11 @@ public class ChatRoomServer {
 
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
-            System.out.println("Server is listening on port " + PORT);
+            System.out.println("在端口 " + PORT);
 
             while (true) {
                 Socket socket = serverSocket.accept();
-                System.out.println("New client connected");
+                System.out.println("新用户已连接");
 
                 ClientHandler clientHandler = new ClientHandler(socket);
                 clients.add(clientHandler);
@@ -49,22 +49,22 @@ public class ChatRoomServer {
                 out = new PrintWriter(socket.getOutputStream(), true);
 
                 nickname = in.readLine();
-                broadcastMessage(nickname + " has joined the chat.", this);
+                broadcastMessage(nickname + " 加入聊天.", this);
 
                 String message;
                 while ((message = in.readLine()) != null) {
-                    System.out.println("Message from " + nickname + ": " + message);
+                    System.out.println(nickname + ": " + message);
                     broadcastMessage(nickname + ": " + message, this);
                 }
             } catch (IOException e) {
-                System.out.println("Error handling client: " + e.getMessage());
+                System.out.println("错误的用户: " + e.getMessage());
             } finally {
                 try {
                     clients.remove(this);
-                    broadcastMessage(nickname + " has left the chat.", this);
+                    broadcastMessage(nickname + " 离开聊天", this);
                     socket.close();
                 } catch (IOException e) {
-                    System.out.println("Error closing client: " + e.getMessage());
+                    System.out.println("错误: " + e.getMessage());
                 }
             }
         }
