@@ -1,11 +1,11 @@
 package uestc.book;
 
-public class Authors {
+public class Author {
     private String name;
     private String email;
     private char gender;
 
-    public Authors(String name, String email, char gender)
+    public Author(String name, String email, char gender)
     {
         this.name=name;
         this.email=email;

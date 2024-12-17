@@ -1,25 +1,26 @@
 package uestc.book;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
+
 
 public class Book {
     private String name;
-    private List<Authors> Authors;
+    private Author[] Authors;
     private double price;
     private int qty=0;
 
-    public Book(String name, List<Authors> authors, double price)
+    public Book(String name, Author[] Authors, double price)
     {
         this.name=name;
-        this.Authors=authors;
+        this.Authors=Authors;
         this.price=price;
     }
 
-    public Book(String name, List<Authors> authors, double price, int qty)
+    public Book(String name, Author[] Authors, double price, int qty)
     {
         this.name=name;
-        this.Authors=authors;
+        this.Authors=Authors;
         this.price=price;
         this.qty=qty;
     }
@@ -29,8 +30,7 @@ public class Book {
         return this.name;
     }
 
-    public List<Authors> getAuthors()
-    {
+    public Author[] getAuthors() {
         return Authors;
     }
 
@@ -54,22 +54,24 @@ public class Book {
         this.qty=qty;
     }
 
-    public String toString()
-    {
-        return "Book[name="+this.name+", authors=Authors="+this.Authors+this.price+", qty="+this.qty+"]";
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", Authors=" + Arrays.toString(Authors) +
+                ", price=" + price +
+                ", qty=" + qty +
+                '}';
     }
 
     public String getAuthorsNames()
     {
-        StringBuilder names = new StringBuilder();
-        for (int i = 0; i < Authors.size(); i++)
+        String names="";
+        for (int i = 0; i < Authors.length; i++)
         {
-            names.append(Authors.get(i).getName());
-            if (i < Authors.size() - 1)
-            {
-                names.append(", ");
-            }
+            String name=Authors[i].getName();
+            names=names+","+name;
         }
-        return names.toString();
+        return names;
     }
 }
