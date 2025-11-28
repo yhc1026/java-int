@@ -5,6 +5,12 @@ public class User {
     private Integer usernum;
     private String birthday;
 
+    public User(String username, Integer usernum, String birthday) {
+        this.username = username;
+        this.usernum = usernum;
+        this.birthday = birthday;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
@@ -17,7 +23,7 @@ public class User {
         this.birthday = birthday;
     }
 
-    public String getUesename() {
+    public String getUsername() {
         return username;
     }
 
@@ -32,7 +38,7 @@ public class User {
     @Override
     public String toString() {
         return "user{" +
-                "uesename='" + username + '\'' +
+                "username='" + username + '\'' +
                 ", usernum=" + usernum +
                 ", birthday='" + birthday + '\'' +
                 '}';
