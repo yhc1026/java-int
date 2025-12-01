@@ -1,9 +1,7 @@
-package com.spring.bookmanage;
+package com.spring.bookmanage.entity;
 
 
 import lombok.Data;
-
-import java.math.BigDecimal;
 
 @Data
 public class BookInfo {

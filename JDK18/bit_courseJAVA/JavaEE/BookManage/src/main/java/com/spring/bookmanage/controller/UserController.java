@@ -1,6 +1,7 @@
-package com.spring.bookmanage;
+package com.spring.bookmanage.controller;
 
 
+import com.spring.bookmanage.entity.BookInfo;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
