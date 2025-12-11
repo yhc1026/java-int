@@ -2,11 +2,12 @@ package com.spring.bookmanage.dao;
 
 import com.spring.bookmanage.entity.BookInfo;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class BookDao {
 
     public List<BookInfo> getMockBookList1(){
