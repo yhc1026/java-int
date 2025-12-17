@@ -1,0 +1,3 @@
+com\spring\bookmanage\service\UserInfoService.class
+com\spring\bookmanage\mapper\UserInfoMapper.class
+com\spring\bookmanage\entity\UserInfo.class

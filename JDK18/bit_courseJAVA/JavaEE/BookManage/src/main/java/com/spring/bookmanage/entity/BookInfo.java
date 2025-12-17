@@ -11,7 +11,7 @@ public class BookInfo {
     private String bookName;
     private String author;
     private Integer count;
-    private float price;
+    private Integer price;
     private String publish;
     private Integer status;
     private String statusCN;
