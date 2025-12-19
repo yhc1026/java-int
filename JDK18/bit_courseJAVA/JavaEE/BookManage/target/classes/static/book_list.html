@@ -113,7 +113,17 @@
 
             getBookList();
             function getBookList() {
-                
+                $.ajax({
+                    type: "get",
+                    url: "/book/getListByPage",
+                    success: function (books){
+                        var finalHtml="";
+                        for(var book of books){
+                            finalHtml +='<tr>';
+
+                        }
+                    }
+                })
             }
     
             //翻页信息
