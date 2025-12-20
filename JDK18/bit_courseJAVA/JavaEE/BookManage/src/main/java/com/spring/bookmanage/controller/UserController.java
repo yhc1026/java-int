@@ -1,10 +1,12 @@
 package com.spring.bookmanage.controller;
 
 
+import com.spring.bookmanage.constant.Constants;
 import com.spring.bookmanage.entity.BookInfo;
 import com.spring.bookmanage.entity.UserInfo;
 import com.spring.bookmanage.service.UserInfoService;
 import jakarta.servlet.http.HttpSession;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @RequestMapping("/user")
 @RestController
 public class UserController {
@@ -32,7 +35,8 @@ public class UserController {
         }
         if(password.equals(userInfo.getPassword())){
             userInfo.setPassword("");
-            session.setAttribute("session_user_info",userInfo);
+            session.setAttribute(Constants.SESSION_USER_INFO,userInfo);
+            log.info("设置用户信息："+userInfo);
             return true;
         }
         return false;

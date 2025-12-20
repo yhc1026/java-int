@@ -51,4 +51,10 @@ public class BookService {
     public int updateBook(BookInfo bookInfo) {
         return bookInfoMapper.updateBook(bookInfo);
     }
+
+    public String deleteBatchBook(List<Integer> ids) {
+        int i=bookInfoMapper.deleteBatchBook(ids);
+        if(i>0){return "";}
+        return "error";
+    }
 }

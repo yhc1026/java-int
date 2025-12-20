@@ -1,17 +1,18 @@
 package com.spring.bookmanage.controller;
 
-import com.spring.bookmanage.entity.BookInfo;
-import com.spring.bookmanage.entity.PageRequest;
-import com.spring.bookmanage.entity.ResponseResult;
+import com.spring.bookmanage.constant.Constants;
+import com.spring.bookmanage.entity.*;
 import com.spring.bookmanage.enums.BookStatusEnum;
+import com.spring.bookmanage.enums.ResultCodeEnum;
 import com.spring.bookmanage.service.BookService;
+import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -46,8 +47,9 @@ public class BookController {
 
 
     @RequestMapping("/getListByPage")
-    public ResponseResult<BookInfo> getListByPage(PageRequest  pageRequest) {
-        return bookService.getListByPage(pageRequest);
+    public Result<ResponseResult<BookInfo>> getListByPage(PageRequest  pageRequest) {
+        ResponseResult<BookInfo> bookList = bookService.getListByPage(pageRequest);
+        return Result.success(bookList);
     }
 
     @RequestMapping("/queryBookById")
@@ -74,7 +76,6 @@ public class BookController {
             }else{
                 return "update error";
             }
-
         }catch (Exception e){
             log.error("error,"+e);
             return e.getMessage();
@@ -95,5 +96,17 @@ public class BookController {
            log.error("error,"+e);
            return e.getMessage();
        }
+    }
+
+    @RequestMapping("/deleteBatchBook")
+    public String deleteBatchBook(@RequestParam List<Integer> ids){
+        log.info("deleteBatchBook: "+ids);
+        try {
+            return bookService.deleteBatchBook(ids);
+        }catch (Exception e){
+            log.error("error,"+e);
+            return e.getMessage();
+        }
+
     }
 }

@@ -28,4 +28,6 @@ public interface BookInfoMapper {
     BookInfo getBookById(String id);
 
     int updateBook(BookInfo bookInfo);
+
+    int deleteBatchBook(List<Integer> ids);
 }
