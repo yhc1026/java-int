@@ -8,19 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-book.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-book.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/mapper/BookInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/mapper/BookInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/ResponseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/ResponseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/mapper/BookInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/mapper/BookInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/service/BookService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BookInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BookInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mybatis/src/main/java/com/spring/mybatis/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mybatis/src/main/java/com/spring/mybatis/mapper/UserInfoMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +123,7 @@
       <workItem from="1766043293199" duration="339000" />
       <workItem from="1766111853145" duration="6073000" />
       <workItem from="1766126824853" duration="3500000" />
+      <workItem from="1766200969184" duration="9811000" />
     </task>
     <servers />
   </component>

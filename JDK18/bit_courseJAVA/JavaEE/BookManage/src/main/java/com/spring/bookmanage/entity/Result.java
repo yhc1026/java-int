@@ -20,11 +20,10 @@ public class Result<T> {
         return result;
     }
 
-    public static <T> Result fail(String errMsg, T data) {
+    public static <T> Result fail(String errMsg) {
         Result result=new Result();
         result.setCode(ResultCodeEnum.ERROR);
         result.setErrMsg(errMsg);
-        result.setData(data);
         return result;
     }
 

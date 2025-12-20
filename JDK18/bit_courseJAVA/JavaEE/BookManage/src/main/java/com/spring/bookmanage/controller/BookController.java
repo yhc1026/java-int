@@ -23,8 +23,8 @@ public class BookController {
     @Autowired
     private  BookService bookService;
 
-    @RequestMapping("/addBook")
-    public String addBook(BookInfo bookInfo){
+    @RequestMapping(value = "/addBook")
+    public Result addBook(BookInfo bookInfo){
         log.info("add book"+bookInfo);
         if(!StringUtils.hasLength(bookInfo.getBookName())
                 ||bookInfo.getCount()==null
@@ -33,23 +33,29 @@ public class BookController {
                 ||bookInfo.getStatus()==null
         ){
             log.error("bad parameter, "+bookInfo);
-            return "parameter error";
+            return Result.fail("parameter error");
         }
         try {
             String i=bookService.addBook(bookInfo);
             System.out.println("\n"+i+"\n");
-            return i;
+            return Result.success(i);
         }catch (Exception e){
             log.error("error,"+e);
-            return e.getMessage();
+            return Result.fail("fail: "+ e.getMessage());
         }
     }
 
 
     @RequestMapping("/getListByPage")
     public Result<ResponseResult<BookInfo>> getListByPage(PageRequest  pageRequest) {
-        ResponseResult<BookInfo> bookList = bookService.getListByPage(pageRequest);
-        return Result.success(bookList);
+        try{
+            int i=1/0;
+            ResponseResult<BookInfo> bookList = bookService.getListByPage(pageRequest);
+            return Result.success(bookList);
+        }catch (Exception e){
+            return Result.fail("fail: "+ e.getMessage());
+        }
+
     }
 
     @RequestMapping("/queryBookById")
@@ -58,8 +64,8 @@ public class BookController {
         return bookService.getBookById(id);
     }
 
-    @RequestMapping("/updateBook")
-    public String updateBook(BookInfo bookInfo){
+    @RequestMapping(value= "/updateBook")
+    public Result updateBook(BookInfo bookInfo){
         log.info("updateBook: "+bookInfo);
         if(!StringUtils.hasLength(bookInfo.getBookName())
         ||bookInfo.getCount()==null
@@ -72,18 +78,18 @@ public class BookController {
             int i=bookService.updateBook(bookInfo);
             log.info("updateBook: "+i);
             if(i>0){
-                return "";
+                return Result.success("");
             }else{
-                return "update error";
+                return Result.fail("修改图书失败");
             }
         }catch (Exception e){
             log.error("error,"+e);
-            return e.getMessage();
+            return Result.fail("fail+ "+ e.getMessage());
         }
     }
 
-    @RequestMapping("/deleteBook")
-    public String deleteBookById(int id){
+    @RequestMapping(value="/deleteBook")
+    public Result deleteBookById(int id){
         log.info("deleteBookById: "+id);
        try {
            BookInfo bookInfo = new BookInfo();
@@ -91,21 +97,21 @@ public class BookController {
            bookInfo.setStatus(BookStatusEnum.DELETE.getCode());
            log.info("book info: "+bookInfo);
            bookService.updateBook(bookInfo);
-           return"";
+           return Result.success("");
        }catch (Exception e){
            log.error("error,"+e);
-           return e.getMessage();
+           return Result.fail("fail: "+e.getMessage());
        }
     }
 
-    @RequestMapping("/deleteBatchBook")
-    public String deleteBatchBook(@RequestParam List<Integer> ids){
+    @RequestMapping(value="/deleteBatchBook")
+    public Result deleteBatchBook(@RequestParam List<Integer> ids){
         log.info("deleteBatchBook: "+ids);
         try {
-            return bookService.deleteBatchBook(ids);
+            return Result.success(bookService.deleteBatchBook(ids));
         }catch (Exception e){
             log.error("error,"+e);
-            return e.getMessage();
+            return Result.fail("fail: "+ e.getMessage());
         }
 
     }
