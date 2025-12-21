@@ -1,313 +1,48 @@
-2025-12-20T14:26:45.045+08:00  INFO 20844 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 20844 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:26:45.048+08:00  INFO 20844 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:26:45.720+08:00  INFO 20844 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:26:45.732+08:00  INFO 20844 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:26:45.732+08:00  INFO 20844 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:26:45.770+08:00  INFO 20844 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 689 ms
-2025-12-20T14:26:46.252+08:00  INFO 20844 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:26:46.256+08:00  INFO 20844 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.585 seconds (process running for 2.167)
-2025-12-20T14:26:50.396+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:26:50.397+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:26:50.399+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-20T14:26:50.448+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:26:50.567+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@772de905
-2025-12-20T14:26:50.569+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:26:50.632+08:00  INFO 20844 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:27:57.193+08:00  INFO 20844 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:27:57.200+08:00  INFO 20844 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:27:57.205+08:00  INFO 20844 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:27:57.213+08:00  INFO 20844 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:28:00.131+08:00  INFO 20492 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 20492 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:28:00.133+08:00  INFO 20492 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:28:00.698+08:00  INFO 20492 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:28:00.706+08:00  INFO 20492 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:28:00.706+08:00  INFO 20492 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:28:00.734+08:00  INFO 20492 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 575 ms
-2025-12-20T14:28:01.078+08:00  INFO 20492 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:28:01.081+08:00  INFO 20492 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.255 seconds (process running for 1.724)
-2025-12-20T14:28:02.736+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:28:02.737+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:28:02.738+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-20T14:28:02.771+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:28:02.860+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d2805f
-2025-12-20T14:28:02.861+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:28:02.899+08:00  INFO 20492 --- [BookManage] [http-nio-8080-exec-4] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:30:22.773+08:00  INFO 20492 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:30:22.783+08:00  INFO 20492 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:30:22.787+08:00  INFO 20492 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:30:22.795+08:00  INFO 20492 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:30:25.884+08:00  INFO 32292 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 32292 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:30:25.886+08:00  INFO 32292 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:30:26.467+08:00  INFO 32292 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:30:26.475+08:00  INFO 32292 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:30:26.475+08:00  INFO 32292 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:30:26.504+08:00  INFO 32292 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 589 ms
-2025-12-20T14:30:26.844+08:00  INFO 32292 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:30:26.847+08:00  INFO 32292 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.261 seconds (process running for 1.724)
-2025-12-20T14:30:29.868+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:30:29.869+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:30:29.870+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-20T14:30:29.911+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:30:29.996+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40495af9
-2025-12-20T14:30:29.997+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:30:49.728+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:31:11.184+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-2] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:31:13.568+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-8] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:31:13.588+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-8] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:31:13.605+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-8] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:31:13.605+08:00  INFO 32292 --- [BookManage] [http-nio-8080-exec-8] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:31:42.225+08:00  INFO 32292 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:31:42.232+08:00  INFO 32292 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:31:42.236+08:00  INFO 32292 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:31:42.242+08:00  INFO 32292 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:31:45.658+08:00  INFO 21444 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 21444 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:31:45.660+08:00  INFO 21444 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:31:46.270+08:00  INFO 21444 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:31:46.278+08:00  INFO 21444 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:31:46.278+08:00  INFO 21444 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:31:46.308+08:00  INFO 21444 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 617 ms
-2025-12-20T14:31:46.659+08:00  INFO 21444 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:31:46.663+08:00  INFO 21444 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.319 seconds (process running for 1.796)
-2025-12-20T14:31:48.085+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:31:48.085+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:31:48.087+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-20T14:31:48.128+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:31:48.223+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56aa4c39
-2025-12-20T14:31:48.225+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:31:48.265+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:31:50.457+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:31:50.469+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-2] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:31:50.486+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:31:50.486+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:31:56.910+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-3] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:31:57.750+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-4] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:31:59.241+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:31:59.243+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-5] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:31:59.251+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:31:59.251+08:00  INFO 21444 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:32:00.421+08:00  INFO 21444 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:32:00.431+08:00  INFO 21444 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:32:00.438+08:00  INFO 21444 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:32:00.450+08:00  INFO 21444 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:32:02.145+08:00  INFO 25548 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 25548 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:32:02.147+08:00  INFO 25548 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:32:02.772+08:00  INFO 25548 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:32:02.781+08:00  INFO 25548 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:32:02.781+08:00  INFO 25548 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:32:02.811+08:00  INFO 25548 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 631 ms
-2025-12-20T14:32:03.171+08:00  INFO 25548 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:32:03.175+08:00  INFO 25548 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.357 seconds (process running for 1.831)
-2025-12-20T14:32:06.081+08:00  INFO 25548 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:32:06.088+08:00  INFO 25548 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:32:07.786+08:00  INFO 572 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 572 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:32:07.788+08:00  INFO 572 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:32:08.359+08:00  INFO 572 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:32:08.367+08:00  INFO 572 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:32:08.367+08:00  INFO 572 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:32:08.394+08:00  INFO 572 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 578 ms
-2025-12-20T14:32:08.753+08:00  INFO 572 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:32:08.757+08:00  INFO 572 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.293 seconds (process running for 1.81)
-2025-12-20T14:32:15.277+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:32:15.278+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:32:15.278+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-20T14:32:15.288+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:32:17.865+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:32:17.954+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4360a95f
-2025-12-20T14:32:17.955+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:32:17.990+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:32:19.830+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:32:19.839+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-3] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:32:19.857+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:32:19.857+08:00  INFO 572 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:33:58.750+08:00  INFO 572 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:33:58.761+08:00  INFO 572 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:33:58.766+08:00  INFO 572 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:33:58.778+08:00  INFO 572 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:34:01.938+08:00  INFO 33660 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 33660 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:34:01.939+08:00  INFO 33660 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:34:02.489+08:00  INFO 33660 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:34:02.497+08:00  INFO 33660 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:34:02.497+08:00  INFO 33660 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:34:02.524+08:00  INFO 33660 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 555 ms
-2025-12-20T14:34:02.850+08:00  INFO 33660 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:34:02.854+08:00  INFO 33660 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.237 seconds (process running for 1.703)
-2025-12-20T14:34:05.626+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:34:05.626+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:34:05.627+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-20T14:34:05.637+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-1] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:34:08.633+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:34:08.727+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30eb4aa0
-2025-12-20T14:34:08.729+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:34:08.766+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-3] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:34:10.369+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:34:10.379+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:34:10.379+08:00  INFO 33660 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:34:17.692+08:00  INFO 33660 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:34:17.699+08:00  INFO 33660 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:34:17.702+08:00  INFO 33660 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:34:17.709+08:00  INFO 33660 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:37:02.787+08:00  INFO 29952 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 29952 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:37:02.790+08:00  INFO 29952 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:37:03.374+08:00  INFO 29952 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:37:03.382+08:00  INFO 29952 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:37:03.382+08:00  INFO 29952 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:37:03.408+08:00  INFO 29952 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 588 ms
-2025-12-20T14:37:03.769+08:00  INFO 29952 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:37:03.773+08:00  INFO 29952 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.318 seconds (process running for 1.808)
-2025-12-20T14:37:04.554+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:37:04.554+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:37:04.555+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-20T14:37:04.596+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:37:04.695+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5931805f
-2025-12-20T14:37:04.695+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:37:04.732+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:37:06.349+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:37:06.355+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-2] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:37:06.369+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:37:06.369+08:00  INFO 29952 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:55:11.346+08:00  INFO 29952 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:55:11.364+08:00  INFO 29952 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:55:11.374+08:00  INFO 29952 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:55:11.390+08:00  INFO 29952 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:56:05.420+08:00  INFO 15584 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 15584 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:56:05.422+08:00  INFO 15584 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:56:05.968+08:00  INFO 15584 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:56:05.976+08:00  INFO 15584 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:56:05.976+08:00  INFO 15584 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:56:06.002+08:00  INFO 15584 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 553 ms
-2025-12-20T14:56:06.339+08:00  INFO 15584 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:56:06.344+08:00  INFO 15584 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.243 seconds (process running for 1.71)
-2025-12-20T14:56:10.455+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:56:10.456+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:56:10.458+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-20T14:56:10.501+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:56:10.603+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f129626
-2025-12-20T14:56:10.605+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:56:10.646+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:56:13.600+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:56:13.608+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-2] c.spring.bookmanage.service.BookService  : print out page size and offset: 10,1
-2025-12-20T14:56:13.624+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:56:13.624+08:00  INFO 15584 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T14:56:50.939+08:00  INFO 15584 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T14:56:50.948+08:00  INFO 15584 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T14:56:50.954+08:00  INFO 15584 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T14:56:50.964+08:00  INFO 15584 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T14:56:54.537+08:00  INFO 34540 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 34540 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T14:56:54.538+08:00  INFO 34540 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T14:56:55.119+08:00  INFO 34540 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T14:56:55.128+08:00  INFO 34540 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T14:56:55.128+08:00  INFO 34540 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T14:56:55.160+08:00  INFO 34540 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 594 ms
-2025-12-20T14:56:55.531+08:00  INFO 34540 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T14:56:55.535+08:00  INFO 34540 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.302 seconds (process running for 1.761)
-2025-12-20T14:56:58.322+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T14:56:58.323+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T14:56:58.324+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-20T14:56:58.363+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T14:56:58.451+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@727481cd
-2025-12-20T14:56:58.454+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T14:56:58.489+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T14:57:00.354+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T14:57:00.360+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T14:57:00.361+08:00  INFO 34540 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:01:38.728+08:00  INFO 34540 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T15:01:38.742+08:00  INFO 34540 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T15:01:38.749+08:00  INFO 34540 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T15:01:38.763+08:00  INFO 34540 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T15:01:42.436+08:00  INFO 26800 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 26800 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T15:01:42.438+08:00  INFO 26800 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T15:01:43.049+08:00  INFO 26800 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T15:01:43.060+08:00  INFO 26800 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T15:01:43.060+08:00  INFO 26800 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T15:01:43.093+08:00  INFO 26800 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 625 ms
-2025-12-20T15:01:43.467+08:00  INFO 26800 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T15:01:43.469+08:00  INFO 26800 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.355 seconds (process running for 1.824)
-2025-12-20T15:01:43.966+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T15:01:43.966+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T15:01:43.966+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-20T15:01:44.002+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T15:01:44.099+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d61d1c3
-2025-12-20T15:01:44.100+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T15:01:44.136+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-1] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T15:01:46.436+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:01:46.446+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:01:46.446+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-2] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:02:18.872+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-4] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:02:18.879+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-4] c.s.b.controller.BookController          : queryBookById: 5
-2025-12-20T15:02:18.920+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-4] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:02:18.920+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-4] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:02:59.407+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:02:59.408+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-3] c.s.b.controller.BookController          : queryBookById: 100
-2025-12-20T15:02:59.414+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:02:59.414+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:03:07.989+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-6] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:03:07.989+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-6] c.s.b.controller.BookController          : queryBookById: -1
-2025-12-20T15:03:07.992+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-6] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:03:07.994+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-6] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:03:12.684+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-9] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:03:12.684+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-9] c.s.b.controller.BookController          : queryBookById: 1
-2025-12-20T15:03:12.688+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-9] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:03:12.688+08:00  INFO 26800 --- [BookManage] [http-nio-8080-exec-9] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:10:24.373+08:00  INFO 26800 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T15:10:24.382+08:00  INFO 26800 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T15:10:24.386+08:00  INFO 26800 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T15:10:24.396+08:00  INFO 26800 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T15:11:09.794+08:00  INFO 23576 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 23576 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T15:11:09.796+08:00  INFO 23576 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T15:11:10.378+08:00  INFO 23576 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T15:11:10.386+08:00  INFO 23576 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T15:11:10.386+08:00  INFO 23576 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T15:11:10.415+08:00  INFO 23576 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 585 ms
-2025-12-20T15:11:10.757+08:00  INFO 23576 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T15:11:10.760+08:00  INFO 23576 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.288 seconds (process running for 1.772)
-2025-12-20T15:11:11.783+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T15:11:11.784+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T15:11:11.784+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-20T15:11:11.795+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-1] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:11:13.697+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-12-20T15:11:13.795+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f49aefd
-2025-12-20T15:11:13.796+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-12-20T15:11:13.843+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-2] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
-2025-12-20T15:11:15.434+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:11:15.435+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-3] c.s.b.controller.BookController          : queryBookById: 1
-2025-12-20T15:11:15.442+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:11:15.442+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-3] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:12:02.019+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-7] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:12:02.027+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-7] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:12:09.474+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T15:12:09.476+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-5] c.s.b.controller.BookController          : deleteBookById: 30
-2025-12-20T15:12:09.479+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-5] c.s.b.controller.BookController          : book info: BookInfo(id=30, bookName=null, author=null, count=null, price=null, publish=null, status=0, statusCN=null, createTime=null, updateTime=null)
-2025-12-20T15:12:09.538+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 目标方法执行后
-2025-12-20T15:12:09.538+08:00  INFO 23576 --- [BookManage] [http-nio-8080-exec-5] c.s.b.interceptor.LoginInterceptor       : 完成后
-2025-12-20T15:30:32.843+08:00  INFO 23576 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T15:30:32.865+08:00  INFO 23576 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T15:30:32.874+08:00  INFO 23576 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-12-20T15:30:32.896+08:00  INFO 23576 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-12-20T15:30:36.769+08:00  INFO 30632 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 30632 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T15:30:36.771+08:00  INFO 30632 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T15:30:37.334+08:00  INFO 30632 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T15:30:37.341+08:00  INFO 30632 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T15:30:37.341+08:00  INFO 30632 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T15:30:37.369+08:00  INFO 30632 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 568 ms
-2025-12-20T15:30:37.702+08:00  INFO 30632 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T15:30:37.705+08:00  INFO 30632 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.267 seconds (process running for 1.729)
-2025-12-20T15:30:39.523+08:00  INFO 30632 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T15:30:39.524+08:00  INFO 30632 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T15:30:39.526+08:00  INFO 30632 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-20T15:30:39.557+08:00 ERROR 30632 --- [BookManage] [http-nio-8080-exec-1] c.s.bookmanage.config.ExceptionAdvice    : error: java.lang.ArithmeticException: / by zero
-2025-12-20T15:54:25.395+08:00  INFO 30632 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T15:54:25.409+08:00  INFO 30632 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-20T16:18:38.287+08:00  INFO 13948 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 13948 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
-2025-12-20T16:18:38.290+08:00  INFO 13948 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-12-20T16:18:38.834+08:00  INFO 13948 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-20T16:18:38.842+08:00  INFO 13948 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-20T16:18:38.842+08:00  INFO 13948 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-20T16:18:38.881+08:00  INFO 13948 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 561 ms
-2025-12-20T16:18:39.215+08:00  INFO 13948 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-20T16:18:39.218+08:00  INFO 13948 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.251 seconds (process running for 1.735)
-2025-12-20T16:18:42.909+08:00  INFO 13948 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-20T16:18:42.911+08:00  INFO 13948 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-20T16:18:42.922+08:00  INFO 13948 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2025-12-20T16:18:42.938+08:00  INFO 13948 --- [BookManage] [http-nio-8080-exec-1] c.s.b.interceptor.LoginInterceptor       : 目标代码执行前
-2025-12-20T16:19:11.763+08:00  INFO 13948 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-20T16:19:11.776+08:00  INFO 13948 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-21T11:37:01.265+08:00  INFO 2864 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 2864 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
+2025-12-21T11:37:01.268+08:00  INFO 2864 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-21T11:37:01.940+08:00  INFO 2864 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-21T11:37:01.949+08:00  INFO 2864 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-21T11:37:01.949+08:00  INFO 2864 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-21T11:37:01.979+08:00  INFO 2864 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 675 ms
+2025-12-21T11:37:02.445+08:00  INFO 2864 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-21T11:37:02.447+08:00  INFO 2864 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.53 seconds (process running for 2.057)
+2025-12-21T11:37:04.141+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-21T11:37:04.141+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-21T11:37:04.142+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-21T11:37:04.181+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-21T11:37:05.279+08:00 ERROR 2864 --- [BookManage] [http-nio-8080-exec-1] c.s.bookmanage.config.ExceptionAdvice    : error: org.mybatis.spring.MyBatisSystemException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in com/spring/bookmanage/mapper/UserInfoMapper.java (best guess)
+### The error may involve com.spring.bookmanage.mapper.UserInfoMapper.queryUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+2025-12-21T11:37:20.886+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-21T11:37:21.905+08:00 ERROR 2864 --- [BookManage] [http-nio-8080-exec-7] c.s.bookmanage.config.ExceptionAdvice    : error: org.mybatis.spring.MyBatisSystemException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in com/spring/bookmanage/mapper/UserInfoMapper.java (best guess)
+### The error may involve com.spring.bookmanage.mapper.UserInfoMapper.queryUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+2025-12-21T11:37:28.041+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-21T11:37:28.081+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@533c328b
+2025-12-21T11:37:28.083+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-21T11:37:28.141+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-2] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
+2025-12-21T11:37:28.142+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-2] c.spring.bookmanage.aspect.TimeAspect    : Boolean com.spring.bookmanage.controller.UserController.Login(String,String,HttpSession)耗时：101ms
+2025-12-21T11:37:49.886+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-5] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
+2025-12-21T11:37:49.887+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-5] c.spring.bookmanage.aspect.TimeAspect    : Boolean com.spring.bookmanage.controller.UserController.Login(String,String,HttpSession)耗时：6ms
+2025-12-21T11:37:51.888+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-4] c.s.b.controller.UserController          : 设置用户信息：UserInfo(id=1, userName=admin, password=, deleteFlag=0, createTime=Wed Dec 17 18:38:20 CST 2025, updateTime=Wed Dec 17 18:38:20 CST 2025)
+2025-12-21T11:37:51.889+08:00  INFO 2864 --- [BookManage] [http-nio-8080-exec-4] c.spring.bookmanage.aspect.TimeAspect    : Boolean com.spring.bookmanage.controller.UserController.Login(String,String,HttpSession)耗时：4ms
+2025-12-21T11:38:55.583+08:00  INFO 2864 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-21T11:38:55.590+08:00  INFO 2864 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-21T11:38:55.595+08:00  INFO 2864 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-21T11:38:55.598+08:00  INFO 2864 --- [BookManage] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-21T11:38:58.647+08:00  INFO 27264 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Starting BookManageApplication using Java 21.0.6 with PID 27264 (D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\target\classes started by 47894 in D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage)
+2025-12-21T11:38:58.649+08:00  INFO 27264 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-21T11:38:59.275+08:00  INFO 27264 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-21T11:38:59.283+08:00  INFO 27264 --- [BookManage] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-21T11:38:59.284+08:00  INFO 27264 --- [BookManage] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-21T11:38:59.308+08:00  INFO 27264 --- [BookManage] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 633 ms
+2025-12-21T11:38:59.710+08:00  INFO 27264 --- [BookManage] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-21T11:38:59.713+08:00  INFO 27264 --- [BookManage] [main] c.s.bookmanage.BookManageApplication     : Started BookManageApplication in 1.36 seconds (process running for 1.836)
+2025-12-21T11:41:10.080+08:00  INFO 27264 --- [BookManage] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-21T11:41:10.088+08:00  INFO 27264 --- [BookManage] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete

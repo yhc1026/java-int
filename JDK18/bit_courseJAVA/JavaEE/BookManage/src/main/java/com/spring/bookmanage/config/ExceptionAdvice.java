@@ -15,6 +15,6 @@ public class ExceptionAdvice {
     @ExceptionHandler
     public Result handler(Exception e){
         log.error("error: "+e);
-        return Result.fail("inner error");
+        return Result.fail("inner error, please connect manager");
     }
 }

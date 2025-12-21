@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="57cb8488-9b82-47f8-a0ce-52f3f589247c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-book.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-book.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/config/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/bookmanage/config/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/config/ExceptionAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/config/ExceptionAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/BookInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/BookInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/PageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/spring/bookmanage/entity/UserInfo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,33 +62,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.BookManage [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookManage [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookManage [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookManage [test].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookManageApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/codeC/java-int/JDK18/bit_courseJAVA/JavaEE/BookManage/src/main/resources/mybatisGenerator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.BookManage [clean].executor": "Run",
+    "Maven.BookManage [compile].executor": "Run",
+    "Maven.BookManage [package].executor": "Run",
+    "Maven.BookManage [test].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BookManageApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/codeC/java-int/JDK18/bit_courseJAVA/JavaEE/BookManage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\codeC\java-int\JDK18\bit_courseJAVA\JavaEE\BookManage\src\main\resources\mybatisGenerator" />
@@ -124,6 +127,8 @@
       <workItem from="1766111853145" duration="6073000" />
       <workItem from="1766126824853" duration="3500000" />
       <workItem from="1766200969184" duration="9811000" />
+      <workItem from="1766287447724" duration="4778000" />
+      <workItem from="1766298667501" duration="1772000" />
     </task>
     <servers />
   </component>
