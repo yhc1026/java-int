@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57cb8488-9b82-47f8-a0ce-52f3f589247c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../transaction/src/main/java/com/spring/transaction/TransactionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../transaction/src/main/java/com/spring/transaction/TransactionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transaction/src/test/java/com/spring/transaction/TransactionApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../transaction/src/test/java/com/spring/transaction/TransactionApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blogsystem/src/main/resources/static/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blogsystem/src/main/resources/static/blog_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blogsystem/src/main/resources/static/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blogsystem/src/main/resources/static/blog_login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blogsystem/src/main/resources/static/blog_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-book.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-book.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +129,9 @@
       <workItem from="1766287447724" duration="4778000" />
       <workItem from="1766298667501" duration="1772000" />
       <workItem from="1766373637475" duration="384000" />
+      <workItem from="1766482558556" duration="49000" />
+      <workItem from="1766482794020" duration="27000" />
+      <workItem from="1766482852124" duration="274000" />
     </task>
     <servers />
   </component>
