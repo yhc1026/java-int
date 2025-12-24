@@ -9,4 +9,7 @@ public interface UserService{
     UserLoginResponse checkPassword(UserLoginRequest userLoginRequest);
     UserLoginResponse checkPassword2(UserLoginRequest userLoginRequest);
 
+    UserLoginResponse getUserInfo(Integer id);
+
+    UserLoginResponse getAuthorInfo(Integer blogId);
 }

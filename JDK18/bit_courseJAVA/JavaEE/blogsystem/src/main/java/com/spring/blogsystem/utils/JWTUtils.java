@@ -23,9 +23,13 @@ public class JWTUtils {
         return jwtToken;
     }
 
-    public static Object parseToken(String token){
+    public static Claims parseToken(String token){
         JwtParser build = Jwts.parserBuilder().setSigningKey(key).build();
-        Claims claims = build.parseClaimsJws(token).getBody();
-        return claims;
+        try{
+            Claims claims = build.parseClaimsJws(token).getBody();
+            return claims;
+        } catch (Exception e) {
+            return null;
+        }
     }
 }

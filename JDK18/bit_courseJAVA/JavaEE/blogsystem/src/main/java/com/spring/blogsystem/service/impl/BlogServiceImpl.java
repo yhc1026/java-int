@@ -3,9 +3,10 @@ package com.spring.blogsystem.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.spring.blogsystem.mapper.BlogInfoMapper;
 import com.spring.blogsystem.pojo.dataobject.BlogInfo;
+import com.spring.blogsystem.pojo.request.AddBlogRequest;
 import com.spring.blogsystem.pojo.response.BlogInfoResponse;
 import com.spring.blogsystem.service.BlogService;
-import com.spring.blogsystem.utils.BeansUtils;
+import com.spring.blogsystem.utils.BeansTransUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ public class BlogServiceImpl implements BlogService {
     private BlogInfoMapper blogInfoMapper;
 
     @Autowired
-    private BeansUtils beansUtils;
+    private BeansTransUtils beansTransUtils;
 
     @Override
     public List<BlogInfoResponse> getList() {
@@ -33,7 +34,7 @@ public class BlogServiceImpl implements BlogService {
         List<BlogInfo> list = blogInfoMapper.selectList(queryWrapper);
 
         List<BlogInfoResponse> blogInfoResponse = list.stream().map(blogInfo->{
-            BlogInfoResponse response = beansUtils.trans(blogInfo);
+            BlogInfoResponse response = beansTransUtils.transBlog(blogInfo);
             return response;
         }).collect(Collectors.toList());
 
@@ -46,8 +47,19 @@ public class BlogServiceImpl implements BlogService {
         queryWrapper.lambda().eq(BlogInfo::getDeleteFlag, 0).eq(BlogInfo::getId, id);
         BlogInfo blogInfo = blogInfoMapper.selectOne(queryWrapper);
 
-        BlogInfoResponse blogInfoResponse = beansUtils.trans(blogInfo);
+        BlogInfoResponse blogInfoResponse = beansTransUtils.transBlog(blogInfo);
         return blogInfoResponse;
+    }
+
+    @Override
+    public boolean addBlog(AddBlogRequest addBlogRequest) {
+        BlogInfo blogInfo = new BlogInfo();
+        BeanUtils.copyProperties(addBlogRequest, blogInfo);
+        Integer cnt = blogInfoMapper.insert(blogInfo);
+        if(cnt==1){
+            return true;
+        }
+        return false;
     }
 
 }

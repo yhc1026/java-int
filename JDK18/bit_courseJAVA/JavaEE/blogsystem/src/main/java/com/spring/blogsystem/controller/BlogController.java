@@ -1,13 +1,16 @@
 package com.spring.blogsystem.controller;
 
 
+import com.spring.blogsystem.pojo.request.AddBlogRequest;
 import com.spring.blogsystem.pojo.response.BlogInfoResponse;
 import com.spring.blogsystem.service.BlogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.swing.plaf.PanelUI;
 import java.util.List;
 
 
@@ -27,5 +30,10 @@ public class BlogController {
     @RequestMapping("/getBlogDetail")
     public BlogInfoResponse getBlogById(int blogId){
         return blogService.getBlogById(blogId);
+    }
+
+    @RequestMapping("/addBlog")
+    public boolean add(@RequestBody AddBlogRequest addBlogRequest){
+        return blogService.addBlog(addBlogRequest);
     }
 }
