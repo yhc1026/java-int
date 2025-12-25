@@ -10,7 +10,7 @@ import java.time.LocalDate;
 public class BlogInfo {
 
     @TableId(type= IdType.AUTO)
-    private String id;
+    private Integer id;
     private String title;
     private String content;
     private Integer userId;

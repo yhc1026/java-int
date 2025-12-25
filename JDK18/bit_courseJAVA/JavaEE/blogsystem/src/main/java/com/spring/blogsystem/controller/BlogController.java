@@ -2,6 +2,7 @@ package com.spring.blogsystem.controller;
 
 
 import com.spring.blogsystem.pojo.request.AddBlogRequest;
+import com.spring.blogsystem.pojo.request.UpdateBlogRequest;
 import com.spring.blogsystem.pojo.response.BlogInfoResponse;
 import com.spring.blogsystem.service.BlogService;
 import lombok.extern.slf4j.Slf4j;
@@ -35,5 +36,15 @@ public class BlogController {
     @RequestMapping("/addBlog")
     public boolean add(@RequestBody AddBlogRequest addBlogRequest){
         return blogService.addBlog(addBlogRequest);
+    }
+
+    @RequestMapping("/updateBlog")
+    public boolean updateBlog(@RequestBody UpdateBlogRequest updateBlogRequest){
+        return blogService.updateBlog(updateBlogRequest);
+    }
+
+    @RequestMapping("/deleteBlog")
+    public boolean deleteBlog(int blogId){
+        return blogService.deleteBlogById(blogId);
     }
 }
