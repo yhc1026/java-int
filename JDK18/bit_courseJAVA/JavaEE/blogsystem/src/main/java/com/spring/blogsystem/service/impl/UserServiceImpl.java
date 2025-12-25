@@ -11,6 +11,7 @@ import com.spring.blogsystem.pojo.response.UserLoginResponse;
 import com.spring.blogsystem.service.UserService;
 import com.spring.blogsystem.utils.BeansTransUtils;
 import com.spring.blogsystem.utils.JWTUtils;
+import com.spring.blogsystem.utils.SecurityUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,8 +34,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserLoginResponse checkPassword(UserLoginRequest userLoginRequest) {
+
+        log.info("userLoginRequest:{}", userLoginRequest);
+
         QueryWrapper<UserInfo> queryWrapper = new QueryWrapper<>();
-        queryWrapper.lambda().eq(UserInfo::getUserName, userLoginRequest.getUsername()).eq(UserInfo::getPassword, userLoginRequest.getPassword());
+        queryWrapper.lambda().eq(UserInfo::getUserName, userLoginRequest.getUsername());
         UserInfo userInfo = userInfoMapper.selectOne(queryWrapper);
 
         if(userInfo == null){
@@ -42,7 +46,12 @@ public class UserServiceImpl implements UserService {
             throw new BlogException(-1,"用户不存在");
         }
 
-        if(!userInfo.getPassword().equals(userLoginRequest.getPassword())){
+//        if(!userInfo.getPassword().equals(userLoginRequest.getPassword())){
+//            log.info("password wrong");
+//            throw new BlogException(-1,"密码错误");
+//        }
+
+        if(!SecurityUtils.check(userInfo.getPassword(), userLoginRequest.getPassword())){
             log.info("password wrong");
             throw new BlogException(-1,"密码错误");
         }
@@ -69,9 +78,15 @@ public class UserServiceImpl implements UserService {
             return new UserLoginResponse(-1,"用户不存在", null) ;
         }
 
-        if(!userInfo.getPassword().equals(userLoginRequest.getPassword())){
+//        if(!userInfo.getPassword().equals(userLoginRequest.getPassword())){
+//            log.info("password wrong");
+//            //throw new BlogException(-1,"密码错误");
+//            return new UserLoginResponse(-2,"密码错误", null) ;
+//        }
+
+        if(!SecurityUtils.check(userInfo.getPassword(), userLoginRequest.getPassword())){
             log.info("password wrong");
-            //throw new BlogException(-1,"密码错误");
+//            throw new BlogException(-1,"密码错误");
             return new UserLoginResponse(-2,"密码错误", null) ;
         }
 
