@@ -47,6 +47,9 @@
                     dev
                 </profile.name>
             </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>

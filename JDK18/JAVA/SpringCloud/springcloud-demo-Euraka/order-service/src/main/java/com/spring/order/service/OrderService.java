@@ -37,8 +37,6 @@ public class OrderService {
         instances = discoveryClient.getInstances("cloud-product");
     }
 
-    //计数器
-    private AtomicInteger count = new AtomicInteger(1);
 
 //    public OrderInfo selectOrderInfoById(Integer orderId) {
 //        OrderInfo orderInfo = orderMapper.selectOrderInfoById(orderId);
@@ -60,6 +58,8 @@ public class OrderService {
      * @param orderId
      * @return
      */
+//    //计数器
+//    private AtomicInteger count = new AtomicInteger(1);
 //    public OrderInfo selectOrderInfoById(Integer orderId) {
 //        OrderInfo orderInfo = orderMapper.selectOrderInfoById(orderId);
 ////      String url="http://127.0.0.1:9090/product/selectProductInfoByProductId?productId="+orderInfo.getProductId();
